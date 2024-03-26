@@ -84,7 +84,7 @@ public class StudentRepository {
             prepared.setString(1, student.getNaam());
             prepared.setString(2, student.getVoornaam());
             prepared.setInt(3, student.getStudnr());
-            prepared.setBoolean(4, student.getGoedBezig());
+            prepared.setBoolean(4, student.isGoedBezig());
             prepared.execute();
 
             prepared.close();
@@ -95,7 +95,7 @@ public class StudentRepository {
 
     public void updateStudent(Student student){
         //SOLVED OPDRACHT 4: implementeer methode
-        String updateString = String.format("UPDATE student SET voornaam = '%s', naam = '%s', goedBezig = %d WHERE studnr = %d;",student.getVoornaam(), student.getNaam(),student.getGoedBezig() ? 1 : 0,student.getStudnr());
+        String updateString = String.format("UPDATE student SET voornaam = '%s', naam = '%s', goedBezig = %d WHERE studnr = %d;",student.getVoornaam(), student.getNaam(),student.isGoedBezig() ? 1 : 0,student.getStudnr());
         try {
             int aantalStudenten = getStudentsByStudnr(student.getStudnr()).size();
             if (aantalStudenten == 1){

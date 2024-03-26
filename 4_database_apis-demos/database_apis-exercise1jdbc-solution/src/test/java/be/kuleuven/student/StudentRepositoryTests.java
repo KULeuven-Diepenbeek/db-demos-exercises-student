@@ -145,7 +145,7 @@ public class StudentRepositoryTests {
         assertThat(updatedFromDb.getStudnr())
                 .as("Studnr updated student")
                 .isEqualTo(456);
-        assertThat(updatedFromDb.getGoedBezig())
+        assertThat(updatedFromDb.isGoedBezig())
                 .as("goedBezig updated student")
                 .isEqualTo(true);
     }

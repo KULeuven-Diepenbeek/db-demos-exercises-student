@@ -38,7 +38,7 @@ public class Student {
         this.voornaam = voornaam;
     }
 
-    public boolean getGoedBezig() {
+    public boolean isGoedBezig() {
         return goedBezig;
     }
 
