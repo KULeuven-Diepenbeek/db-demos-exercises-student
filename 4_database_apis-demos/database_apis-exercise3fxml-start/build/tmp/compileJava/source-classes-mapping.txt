@@ -1,0 +1,12 @@
+be/kuleuven/javasql/jdbc/ConnectionManager.java
+ be.kuleuven.javasql.jdbc.ConnectionManager
+be/kuleuven/javasql/jdbc/StudentRepositoryJdbcImpl.java
+ be.kuleuven.javasql.jdbc.StudentRepositoryJdbcImpl
+be/kuleuven/javasql/domain/Student.java
+ be.kuleuven.javasql.domain.Student
+be/kuleuven/javasql/domain/StudentRepository.java
+ be.kuleuven.javasql.domain.StudentRepository
+be/kuleuven/javasql/controller/StudentController.java
+ be.kuleuven.javasql.controller.StudentController
+be/kuleuven/javasql/SqlFxMain.java
+ be.kuleuven.javasql.SqlFxMain
