@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.dbproject.controller.BeheerSchermDetailedController">
+    <children>
+        <Text layoutX="19.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="More information about player" wrappingWidth="561.21875">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Text>
+        <Button fx:id="homeBtn" layoutX="14.0" layoutY="331.0" mnemonicParsing="false" text="Return Home" />
+      <Label layoutX="19.0" layoutY="57.0" text="Player ID" />
+      <Label layoutX="19.0" layoutY="88.0" text="Player Name" />
+      <Label layoutX="19.0" layoutY="122.0" text="Club ID" />
+      <Label fx:id="playerIdLbl" layoutX="108.0" layoutY="57.0" text="PlayerIdPlaceHolder" />
+      <Label fx:id="playerNameLbl" layoutX="108.0" layoutY="88.0" text="PlayerNamePlaceHolder" />
+      <Label fx:id="clubIdLbl" layoutX="108.0" layoutY="122.0" text="ClubIdPlaceHolder" />
+    </children>
+</AnchorPane>

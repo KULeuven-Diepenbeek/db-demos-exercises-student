@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
+  <script src="pouchdb.find.js"></script>
+
+  <script>
+    var db = new PouchDB('http://admin:admin@localhost:5984/testhttpdb');
+    db.createIndex({
+      index: { fields: ['name'] }
+    });
+
+    var result = db.find({
+      selector: {
+        name: 'Arne'
+      }
+    });
+
+    result.then(function (result) {
+      console.log(result);
+    });
+
+    console.log("DONE")
+
+
+  </script>
+</body>
+
+</html>

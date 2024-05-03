@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
+  <script src="pouchdb.find.js"></script>
+
+  <script>
+    var db = new PouchDB('dbname');
+
+
+    db.put({
+      _id: 'Arne@gmail.com',
+      name: "Arne",
+      age: 28,
+      school: "UHasselt",
+      favouriteCourses: [
+        "DAB",
+        "SES"
+      ]
+    });
+
+    db.changes().on('change', function () {
+      console.log('Ch-Ch-Changes');
+    });
+
+    db.put({
+      _id: 'Kris@gmail.com',
+      name: "Kris",
+      age: 40,
+      school: "KULeuven",
+      favouriteCourses: [
+        "FSWEB"
+      ]
+    });
+
+    db.replicate.to('http://admin:admin@localhost:5984/reptest');
+
+  </script>
+</body>
+
+</html>

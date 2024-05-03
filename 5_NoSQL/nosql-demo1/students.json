@@ -1,0 +1,31 @@
+{
+  "total_rows": 3,
+  "offset": 0,
+  "docs": [
+    {
+      "name": "Arne",
+      "age": "28",
+      "school": "UHasselt",
+      "favouriteCourses": [
+        "DAB",
+        "SES"
+      ]
+    },
+    {
+      "name": "Kris",
+      "age": "40",
+      "school": "KULeuven",
+      "favouriteCourses": [
+        "FSWEB"
+      ]
+    },
+    {
+      "name": "Koen",
+      "age": "17",
+      "school": "KULeuven",
+      "favouriteCourses": [
+        "SES"
+      ]
+    }
+  ]
+}
