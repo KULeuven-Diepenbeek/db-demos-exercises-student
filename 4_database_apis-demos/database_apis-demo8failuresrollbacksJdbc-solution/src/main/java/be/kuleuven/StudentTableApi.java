@@ -32,11 +32,11 @@ public class StudentTableApi {
             connection.commit();
             statement.close();
         } catch (SQLException ex) {
-//            try{
-//                connection.rollback();
-//            }catch (SQLException ex2){
-//                System.out.println("ERROR ROLLBACK FAILED");
-//            }
+            try{
+                connection.rollback();
+            }catch (SQLException ex2){
+                System.out.println("ERROR ROLLBACK FAILED");
+            }
             System.out.println(Main.REDBG+"Exception running SQL commands: "+ex.toString()+Main.RESET);
             ex.printStackTrace();
         }

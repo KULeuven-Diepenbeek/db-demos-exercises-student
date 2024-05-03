@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="school">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="student" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="studnr" type="xs:integer"/>
+              <xs:element name="naam" type="xs:string"/>
+              <xs:element name="voornaam" type="xs:string"/>
+              <xs:element name="goedbezig" type="xs:boolean"/>
+              <xs:element name="gender" type="xs:string"/>
+              <xs:element name="vak" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="naam" type="xs:string"/>
+                    <xs:element name="studiepunten" type="xs:integer"/>
+                    <xs:element name="score" type="xs:integer"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="opleiding">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="Bachelor"/>
+                  <xs:enumeration value="Master"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+

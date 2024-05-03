@@ -1,0 +1,18 @@
+be/kuleuven/concurrency/jdbc/ConnectionManager.java
+ be.kuleuven.concurrency.jdbc.ConnectionManager
+be/kuleuven/concurrency/log/Logger.java
+ be.kuleuven.concurrency.log.Logger
+be/kuleuven/concurrency/chaos/StudentDeleter.java
+ be.kuleuven.concurrency.chaos.StudentDeleter
+be/kuleuven/concurrency/ConcurrencyMain.java
+ be.kuleuven.concurrency.ConcurrencyMain
+be/kuleuven/concurrency/StudentRepository.java
+ be.kuleuven.concurrency.StudentRepository
+be/kuleuven/concurrency/Student.java
+ be.kuleuven.concurrency.Student
+be/kuleuven/concurrency/jdbc/StudentRepositoryJdbcImpl.java
+ be.kuleuven.concurrency.jdbc.StudentRepositoryJdbcImpl
+be/kuleuven/concurrency/chaos/StudentUpdater.java
+ be.kuleuven.concurrency.chaos.StudentUpdater
+be/kuleuven/concurrency/chaos/StudentAdder.java
+ be.kuleuven.concurrency.chaos.StudentAdder

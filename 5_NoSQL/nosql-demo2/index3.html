@@ -16,6 +16,7 @@
 
   <script>
     var db = new PouchDB('http://admin:admin@localhost:5984/testhttpdb');
+
     db.createIndex({
       index: { fields: ['name'] }
     });

@@ -1,0 +1,48 @@
+<school>
+    <student opleiding="Bachelor">
+        <studnr>123</studnr>
+        <naam>Trekhaak</naam>
+        <voornaam>Jaak</voornaam>
+        <goedbezig>false</goedbezig>
+        <gender>Male</gender>
+        <vak>
+            <naam>Wiskunde</naam>
+            <studiepunten>6</studiepunten>
+            <score>15</score>
+        </vak>
+        <vak>
+            <naam>Natuurkunde</naam>
+            <studiepunten>5</studiepunten>
+            <score>12</score>
+        </vak>
+    </student>
+    <student opleiding="Master">
+        <studnr>456</studnr>
+        <naam>Peeters</naam>
+        <voornaam>Jos</voornaam>
+        <goedbezig>false</goedbezig>
+        <gender>Male</gender>
+        <vak>
+            <naam>Informatica</naam>
+            <studiepunten>7</studiepunten>
+            <score>18</score>
+        </vak>
+        <vak>
+            <naam>Statistiek</naam>
+            <studiepunten>4</studiepunten>
+            <score>14</score>
+        </vak>
+    </student>
+    <student opleiding="Bachelor">
+        <studnr>890</studnr>
+        <naam>Dongmans</naam>
+        <voornaam>Ding</voornaam>
+        <goedbezig>true</goedbezig>
+        <gender>Male</gender>
+        <vak>
+            <naam>Engels</naam>
+            <studiepunten>3</studiepunten>
+            <score>16</score>
+        </vak>
+    </student>
+</school>

@@ -1,0 +1,23 @@
+<school>
+    <student>
+        <studnr>123</studnr>
+        <naam>Trekhaak</naam>
+        <voornaam>Jaak</voornaam>
+        <goedbezig>false</goedbezig>
+        <gender>Male</gender>
+    </student>
+    <student>
+        <studnr>456</studnr>
+        <naam>Peeters</naam>
+        <voornaam>Jos</voornaam>
+        <goedbezig>false</goedbezig>
+        <gender>Male</gender>
+    </student>
+    <student>
+        <studnr>890</studnr>
+        <naam>Dongmans</naam>
+        <voornaam>Ding</voornaam>
+        <goedbezig>true</goedbezig>
+        <gender>Male</gender>
+    </student>
+</school>
